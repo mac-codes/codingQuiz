@@ -1,0 +1,28 @@
+html {
+  background-color: floralwhite;
+}
+.scores {
+  color: red;
+  text-align: left;
+  padding: 15px 0 15px 0;
+  text-decoration: underline;
+}
+.main-text {
+  text-align: center;
+  border: 4px goldenrod;
+  border-style: dotted;
+  padding: 15px;
+}
+#h1 {
+  color: cornflowerblue;
+}
+#h2,
+#h3 {
+  color: gray;
+}
+button {
+  border: darkgoldenrod;
+  border-style: solid;
+  padding: 15px 32px;
+  background-color: aliceblue;
+}
