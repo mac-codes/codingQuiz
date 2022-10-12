@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- link css, bootstrap and fonts-->
+  <link rel="stylesheet" href="./assets/styles.css">
+  <!-- link -->
+  <title>Code Quiz</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header-title" id="header">
+    <div class="high-score-btn">
+      <button class="high-score" id="view-scores" type="button">VIEW HIGH SCORE</button>
+    </div>
+    <div>
+      <p id="timer">TIME LEFT: <span id="time-left"> 0 </span></p>
+    </div>
+    <div id="timer-done" style="display:none">TIMES UP!!!</div>
+  </header>
+  <!-- GREETING PAGE -->
+  <main>
+    <section class="main-title">
+      <h1 class="title">CODE QUIZ!</h1>
+      <P class="paragraph">Welcome to this coding quiz. You will be quized on HTML, CSS and JavaScipt! click the 'GO' button to begin. but be careful! a wrong answer will subtract 10 seconds from your timer.</P>
+      <p class="paragraph">!!!GOOD LUCK!!!</p>
+    <div>
+      <button id="start-btn">GO!</button>
+    </div>
+    </section>
+
+  <!-- QUESTION PAGE -->
+    <section id="multiple-choice" style="display:none">
+      <p class="q-title"></p>
+      <div>
+        <p><button id="btn0" class="btn"></button></p>
+        <p><button id="btn1" class="btn"></button></p>
+        <p><button id="btn2" class="btn"></button></p>
+        <p><button id="btn3" class="btn"></button></p>
+        <hr>
+        <p id="a-check" style="display:none"></p>
+      </div> 
+    </section>
+  <!-- DISPLAY SCORE -->
+    <section id="score-summary" style="display:none">
+    <div class="col-2"></div>
+    <div class="col-8 text-left">
+      <h2>YOUR FINAL SCORE IS <span id="final-score"></span> !!!</h2>
+      <form>
+        <p> ENTER YOUR INITIALS: 
+          <input id="init-input" class="form-control" type="text">
+          <button type="submit" id="init-btn" class="btn">SUBMIT</button>
+        </p>
+      </form>
+    </div>
+    </section>
+  <!-- HIGHSCORE DISPLAY -->
+
+  <section id="high-score" style="display:none">
+    <h2>HIGH SCORES</h2>
+    <div id="highscore-list" class="list-group list-group-flush"></div>
+    <!-- add high score -->
+
+      <p>
+        <button type="submit" class="btn" id="back-btn">GO BACK</button>
+        <button type="submit" class="btn" id="clear-btn"> CLEAR</button>
+      </p>
+
+    </section>
+  </main>
+
+<!-- link js and jquery-->
+<!-- link -->
+<script> src="./assets/script.js"</script>
+</body>
+</html>
